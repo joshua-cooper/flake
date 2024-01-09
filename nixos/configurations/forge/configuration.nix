@@ -34,12 +34,6 @@
     '';
   };
 
-  environment.systemPackages = with pkgs; [
-    neovim
-    gitMinimal
-    tmux
-  ];
-
   services.openssh = {
     enable = true;
     settings = {
