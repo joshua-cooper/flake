@@ -27,6 +27,8 @@
 
   networking.hostName = "forge";
 
+  networking.useNetworkd = true;
+
   nix = {
     package = pkgs.nixUnstable;
     extraOptions = ''
